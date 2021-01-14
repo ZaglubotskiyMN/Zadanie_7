@@ -28,7 +28,7 @@ public class Main {
 
             }
         }
-        static class stilag{
+        static class stilag extends arhiv{
             int god;
             int number;
 
