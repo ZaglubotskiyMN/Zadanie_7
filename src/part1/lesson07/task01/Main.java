@@ -3,7 +3,7 @@ package part1.lesson07.task01;
 public class Main {
 
     public static void main(String[] args) {
-        arhiv a1 = new arhiv("г. Самара, пр-кт Кирова 391а",1,"От 2010 года до 2015 года");
+        arhiv a1 = new arhiv();
         System.out.printf("Архив № %d по адресу %s содержат содержат документы %s \n",a1.number,a1.adress,a1.opis);
         stilag b1= new stilag(2010,1);
         System.out.printf("Дело %d года имеет номер %d \n",b1.god,b1.number);
@@ -20,7 +20,7 @@ public class Main {
             String opis;
            // private stilag arhiva [];
 
-            arhiv(String adress,int number,String opis){
+            arhiv(){
                 this.adress = adress;
                 this.number = number;
                 this.opis = opis;
@@ -35,6 +35,7 @@ public class Main {
           //  private polka stilaja[];
 
             stilag(int god,int number){
+                super();
                 this.god=god;
                 this.number=number;
 
